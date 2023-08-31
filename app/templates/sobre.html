@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='about_image.jpg') }}" alt="Sobre Nós" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2>Sobre Nós</h2>
+        <p class="about-description">A Ei Tech é uma empresa apaixonada por tecnologia. Desde a nossa fundação, nosso objetivo é oferecer produtos inovadores que facilitem a vida das pessoas. Nossa equipe dedicada trabalha para garantir que você tenha acesso aos melhores produtos tech do mercado.</p>
+        <p class="about-description">Nosso compromisso com a qualidade e a satisfação do cliente nos tornou uma referência no setor. Estamos sempre em busca de novas maneiras de surpreender nossos clientes e proporcionar experiências únicas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
